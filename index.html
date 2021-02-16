@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Note Viewer</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body style="background-color: ghostwhite;">
+    <div id="app">
+        <div v-bind:style="style">{{ note }}</div>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                note: '',
+                style: {
+                    textAlign: 'center',
+                    fontSize: '25.5vw',
+                }
+            },
+            methods: {
+                handleGlobalKeyDown(e) {
+                    let keyCode = e.keyCode
+
+                    switch (keyCode) {
+                        case 49: // Key: 1
+                            this.note = 'C';
+                            break;
+                        case 50: // Key: 2
+                            this.note = 'D';
+                            break;
+                        case 51: // Key: 3
+                            this.note = 'E';
+                            break;
+                        case 52: // Key: 4
+                            this.note = 'F';
+                            break;
+                        case 53: // Key: 5
+                            this.note = 'G';
+                            break;
+                        case 54: // Key: 6
+                            this.note = 'A';
+                            break;
+                        case 55: // Key: 7
+                            this.note = 'H';
+                            break;
+                        case 56: // Key: 8
+                            this.note = 'C';
+                            break;
+                        // case 57:
+                        //    this.note = 'A';
+                        //    break;
+                        default:
+                            this.note = ''
+                    }
+                }
+            }
+        })
+
+        window.addEventListener('keydown', function (e) {
+            app.handleGlobalKeyDown(e)
+        });
+    </script>
+</body>
+
+</html>
