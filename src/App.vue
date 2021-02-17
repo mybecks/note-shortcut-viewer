@@ -5,7 +5,7 @@
       <Note :keyCode="keyCode"></Note>
       <Presets></Presets>
     </main>
-    <footer>Footer</footer>
+    <footer>🤘 Made with 🎵 by mybecks 🤘</footer>
   </div>
 </template>
 
