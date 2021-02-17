@@ -63,7 +63,7 @@ export default {
   background-color: yellow;
   position: absolute;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
 }
 
 .presets ul {

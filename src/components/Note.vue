@@ -58,5 +58,6 @@ export default {
 <style scoped>
 .note {
   font-size: 25.5vw;
+  /* flex-grow: 1; */
 }
 </style>
