@@ -3,7 +3,8 @@
     <header>HEader</header>
     <main>
       <Note :keyCode="keyCode"></Note>
-      <Presets></Presets>
+      <!-- <Presets></Presets> -->
+      <key-assignment></key-assignment>
     </main>
     <footer>🤘 Made with 🎵 by mybecks 🤘</footer>
   </div>
@@ -12,12 +13,14 @@
 <script>
 import Note from './components/Note.vue';
 import Presets from './components/Presets.vue';
+import KeyAssignment from './components/KeyAssignment.vue';
 
 export default {
   name: 'App',
   components: {
     Note,
-    Presets,
+    // Presets,
+    KeyAssignment,
   },
   data() {
     return {
