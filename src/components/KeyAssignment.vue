@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-import KeyAssignmentElement from './components/KeyAssignmentElement.vue';
+import KeyAssignmentElement from './KeyAssignmentElement.vue';
 
 export default {
   name: 'KeyAssignment',
